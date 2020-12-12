@@ -1,0 +1,23 @@
+name: Questioner
+version: ${project.version}
+main: me.moru3.questioner.Questioner
+api-version: 1.15
+authors: [ moru3 ]
+description: どんな簡単な質問でもこのプラグインなら文句無しで代行で聞いてくれます。
+website: https://moru3.dev
+commands:
+  question:
+    description: デフォルトのコマンドです。
+permissions:
+  questioner.create:
+    default: op
+  questioner.info:
+    default: op
+  questioner.sendall:
+    default: op
+  questioner.reload:
+    default: op
+  questioner.delete:
+    default: op
+  questioner.answer:
+    default: true
