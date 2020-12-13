@@ -15,9 +15,13 @@ permissions:
     default: op
   questioner.sendall:
     default: op
+  questioner.send:
+    default: op
   questioner.reload:
     default: op
   questioner.delete:
     default: op
   questioner.answer:
     default: true
+  questioner.clear:
+    default: op

@@ -26,5 +26,15 @@ questionnaire_footer: "§2§l+**************************************************
 how_to_use_create: "使用方法: /question create (id) (質問内容) (タイプ: number, decision)"
 how_to_use_answer: "使用方法: /question answer (id) (回答)"
 how_to_use_sendall: "使用方法: /question sendall [ID]"
-how_to_use_info: "使用方法: /question info [ID]"
+how_to_use_info: "使用方法: /question info [ID] (asc/desc)"
 how_to_use_delete: "使用方法: /question delete [ID]"
+how_to_use_clear: "使用方法: /question clear [ID]"
+how_to_user_send: "使用方法: /question send [ID] [player]"
+unknown_error_desc: "&c不明なエラーが発生したため降順に失敗しました。"
+player_not_found: "&cプレイヤーが見つかりませんでした。"
+claer_answer: "&a回答をすべて削除しました。"
+order_one: "&e" #YES・NOチャートの場合上の結果がこの色になります。
+order_two: "&e"
+order_three: "&6"
+order_four: "&6"
+order_five: "&c"#YES・NOチャートの場合下の結果がこの色になります。

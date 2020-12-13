@@ -69,11 +69,10 @@ class Question(private val id: String, private val content: String, private val 
                 addExtra(two)
                 addExtra(" ")
                 addExtra(one)
-                addExtra(one)
                 addExtra("\n")
-                addExtra(language?.getMessage("questionnaire_footer")?:"§2§l+*****************************************************+")
             }
         }
+        result.addExtra(language?.getMessage("questionnaire_footer")?:"§2§l+*****************************************************+")
         player.spigot().sendMessage(ChatMessageType.CHAT, result)
     }
 
@@ -107,8 +106,8 @@ class Question(private val id: String, private val content: String, private val 
     fun getResult(answerConfig: Config): Map<String, Int> {
         val result = mutableMapOf<String, Int>()
         if(type==QuestionType.DECISION) {
-            result["yes"] = answerConfig.config().getInt("${id}.yes")
-            result["no"] = answerConfig.config().getInt("${id}.no")
+            result["はい"] = answerConfig.config().getInt("${id}.yes")
+            result["いいえ"] = answerConfig.config().getInt("${id}.no")
         } else {
             result["1"] = answerConfig.config().getInt("${id}.1")
             result["2"] = answerConfig.config().getInt("${id}.2")
